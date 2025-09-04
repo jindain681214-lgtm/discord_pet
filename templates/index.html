@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>펫 상태</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pet-card">
+        <div class="pet-header">
+            <h1>{{ pet.name }}</h1>
+            <span class="stage-badge">{{ pet.stage }}</span>
+        </div>
+        <div class="pet-level">
+            <p>LV. {{ pet.level }}</p>
+        </div>
+        <div class="pet-image">
+            <!-- 나중에 펫 이미지 URL을 여기에 넣을 수 있습니다. -->
+            <img src="https://via.placeholder.com/150" alt="펫 이미지">
+        </div>
+        <div class="stats-container">
+            <div class="stat">
+                <label>✨ 경험치</label>
+                <div class="progress-bar">
+                    <div class="progress-fill xp" style="width: {{ pet.xp }}%;"></div>
+                </div>
+                <span>{{ pet.xp }} / 100</span>
+            </div>
+            <div class="stat">
+                <label>❤️ 포만감</label>
+                <div class="progress-bar">
+                    <div class="progress-fill hunger" style="width: {{ pet.hunger }}%;"></div>
+                </div>
+                <span>{{ pet.hunger }} / 100</span>
+            </div>
+            <div class="stat">
+                <label>😊 행복도</label>
+                <div class="progress-bar">
+                    <div class="progress-fill happiness" style="width: {{ pet.happiness }}%;"></div>
+                </div>
+                <span>{{ pet.happiness }} / 100</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

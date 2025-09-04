@@ -1,0 +1,106 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pet-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+}
+
+.pet-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.pet-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.stage-badge {
+    background-color: #5865f2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.pet-level p {
+    margin: 0 0 15px 0;
+    color: #555;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.pet-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #7289da;
+    margin-bottom: 20px;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stat {
+    text-align: left;
+}
+
+.stat label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-fill.xp {
+    background-color: #f1c40f; /* Gold */
+}
+
+.progress-fill.hunger {
+    background-color: #e74c3c; /* Red */
+}
+
+.progress-fill.happiness {
+    background-color: #2ecc71; /* Green */
+}
+
+.stat span {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
