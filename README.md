@@ -7,7 +7,7 @@
       명령어를 입력하여 봇을 실행합니다.
 
 python
-``` C:\Users\LGEDX\Desktop\pet\bot.py ```
+``` .pet\bot.py ```
 
 ### 2. 기본 명령어
    * !입양 [원하는 이름]
