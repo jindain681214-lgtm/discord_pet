@@ -4,13 +4,12 @@ import json
 import random
 from discord.ext import tasks
 
-# 봇의 의도(intents)를 설정합니다.
 intents = discord.Intents.default()
-intents.message_content = True # 메시지 내용을 읽기 위한 권한
+intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-# --- 펫 데이터 관리 ---
+# --- 펫 데이터 ---
 PET_FILE = "pets.json"
 pets = {}
 
