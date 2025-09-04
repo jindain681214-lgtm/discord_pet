@@ -1,5 +1,5 @@
 ### 1. 봇 실행 방법
-   1. C:\Users\LGEDX\Desktop\pet 폴더에 있는 bot.py
+   1. .pet 폴더에 있는 bot.py
       파일을 엽니다.
    2. 파일 맨 아래쪽의 'YOUR_BOT_TOKEN' 부분을 실제
       발급받은 봇 토큰으로 교체하고 저장합니다.
